@@ -5,7 +5,7 @@ describe('inspecionando Elementos', () => {
     cy.wait(2000);
     cy.url().should('include', 'anuncios');
     cy.get('#input-filter-listings-search').type('imoveis{enter}');
-    cy.xpath('//*[@id="main"]/div[3]/div/div').contains('1 - 23 de 23 resultado(s)');
+    cy.xpath('//*[@id="main"]/div[3]/div/div').contains('1 - 26 de 26 resultado(s)');
     cy.get('.custom-select.custom-select-sm').select('Menor preço'); //Interagir com comandos dentro de menu suspenso.
   
    
